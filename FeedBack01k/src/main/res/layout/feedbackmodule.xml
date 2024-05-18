@@ -1,0 +1,33 @@
+<!-- feedback_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Star Rating Component -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <!-- Message Box -->
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leave your feedback here..."
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:layout_gravity="end" />
+
+</LinearLayout>
